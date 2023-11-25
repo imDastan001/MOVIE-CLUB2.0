@@ -23,12 +23,16 @@ const useSelecteMovie = (id) => {
       API_Option
     );
     const responsetrailer = await responcse2.json();
-
+    if(responsetrailer.results.length===0){
+      dispatch(addSelectedMovieTrailer("no val"));
+    }
+    else{
     let trailer = responsetrailer.results.find(x=>x.type==="Trailer")
     if(!trailer){
       trailer = responsetrailer.results[0]
     }
     dispatch(addSelectedMovieTrailer(trailer));
+  }
   };
   useEffect(() => {
     moviefetch();

@@ -12,8 +12,8 @@ const dispatch = useDispatch();
     API_Option
   );
   const data = await response.json()
-  const youmaylike = data.results.filter(x=>x.original_title!=moviename);
-  dispatch(addYouMayLikeMovies(youmaylike));
+  const movies = data.results.filter(x => x.original_title !== moviename && x.poster_path !== null);
+  dispatch(addYouMayLikeMovies(movies));
 
 };
 useEffect(() => {

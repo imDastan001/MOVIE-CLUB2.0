@@ -4,10 +4,11 @@ import DescMoviePoster from "./descMoviePoster";
 import DescMovie from "./descMovie";
 import YouMayLike from "./YouMayLike";
 import { useParams } from "react-router-dom";
+import BackupImg from "../assets/movie.jpg"
 
 import HomeShimmer from "./homeShimmer";
 import { useState } from "react";
-import { IMG_URL } from "../utils/constant";
+import { IMG_URL, IMG_URL_Background } from "../utils/constant";
 const movieinfo = () => {
   const [trailer, setisTrailer] = useState(false);
   const params = useParams()
@@ -17,14 +18,17 @@ const movieinfo = () => {
   );
   const selectedTrailer = useSelector((store) => store.selected?.Trailer);
 
-  return !selectedMoviedata || !selectedTrailer ? (
+  return !selectedMoviedata || !selectedTrailer? (
     <HomeShimmer />
   ) : (
     <>
+
+
+
       <div className="relative bg-gray-800 pt-3 rounded-xl mb-3 mx-3">
         <img
           className="absolute inset-0  z-0 rounded-xl opacity-10"
-          src={IMG_URL + selectedMoviedata.backdrop_path}
+          src={(selectedMoviedata.backdrop_path===null)?BackupImg:IMG_URL_Background + selectedMoviedata.backdrop_path}
           alt="background poster"
         />
         <div className="relative z-10">

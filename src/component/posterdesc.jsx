@@ -5,7 +5,7 @@ const posterdesc = ({ title, movieid, overview }) => {
 const dispatch =useDispatch();
   return (
     <>
-      <div className="absolute bottom-3 p-4 lg:bottom-20 xl:bottom-60">
+      <div className="absolute bottom-3 p-4  lg:sticky lg:bottom-28 xl:bottom-3 ">
         <h1 className="text-white text-lg  font-bold sm:text-2xl xl:text-4xl">{title}</h1>
         <p className="text-white line-clamp-3 text-xs w-1/2 md:line-clamp-none sm:text-sm xl:text-lg">{overview}</p>
         <Link to={"movieinfo/" + movieid}>
