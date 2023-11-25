@@ -15,14 +15,14 @@ const searchmovie=()=>{
         
         <>
        
-        <div className="bg-zinc-900 py-3 px-3 rounded-xl mb-3 mx-3">
+        <div className="bg-zinc-900  px-3 py-3 rounded-t-xl ">
        {(searchmoves.length===0)?
         <h1 className="text-red-600">No Result Found</h1>:
          <>
            <h1 className="text-red-600">Results for</h1>
-            <p className="text-3xl text-white font-mono font-bold">{name}</p>
+            <p className="text-xl lg:text-3xl text-white font-mono font-bold">{name}</p>
         
-        <MovieList list={searchmoves} />):
+        <MovieList list={searchmoves} />
         </>
     }
         </div>
