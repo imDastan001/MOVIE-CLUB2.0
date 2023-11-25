@@ -5,7 +5,7 @@ import MovieInfo from "./component/movieInfo";
 import Header from "./component/header";
 import SearchMovie from "./component/searchmovie"
 
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
 function App() {
   return (
     <Router>
