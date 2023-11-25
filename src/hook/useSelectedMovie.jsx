@@ -33,6 +33,6 @@ const useSelecteMovie = (id) => {
   useEffect(() => {
     moviefetch();
 
-  }, []);
+  }, [id]);
 };
 export default useSelecteMovie;

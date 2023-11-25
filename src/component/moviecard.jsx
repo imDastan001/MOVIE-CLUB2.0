@@ -2,14 +2,17 @@ import { Link } from "react-router-dom";
 import {removeSelectedMovie} from "../utils/selectedMovie"
 import { IMG_URL } from "../utils/constant";
 import { useDispatch } from "react-redux";
+import useSelecteMovie from "../hook/useSelectedMovie";
+import { useParams } from "react-router-dom";
 
 
 const moviecard = ({poster, id }) => {
 const dispatch =useDispatch();
+
     return (
     <>
       <div className="p-3 w-40">
-        <Link to={"/movieinfo/"+id} onClick={()=>dispatch(removeSelectedMovie())}>
+        <Link to={"/movieinfo/"+id}onClick={()=>dispatch(removeSelectedMovie())}>
           
           <img
             className="rounded-xl shadow-lg transition-all duration-300 hover:translate-y-[-15px]"

@@ -18,6 +18,6 @@ const fetchdata = async () => {
 }
 useEffect(()=>{
 fetchdata()
-},[])
+},[searchvalue])
 }
 export default useSearchedMovie

@@ -3,8 +3,9 @@ import { Link } from "react-router-dom";
 import Search from "../assets/searchbtn2.png";
 import { useState } from "react";
 import {removeSearchMovies} from "../utils/searchkey"
-
+import { useDispatch } from "react-redux";
 const header = () => {
+  const dispatch=useDispatch()
 
 
     const [seesearch , setSeeSearch] = useState("")

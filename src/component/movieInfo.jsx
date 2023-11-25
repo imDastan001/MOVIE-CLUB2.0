@@ -10,8 +10,8 @@ import { useState } from "react";
 import { IMG_URL } from "../utils/constant";
 const movieinfo = () => {
   const [trailer, setisTrailer] = useState(false);
-
-  useSelecteMovie(useParams());
+  const params = useParams()
+  useSelecteMovie(params);
   const selectedMoviedata = useSelector(
     (store) => store.selected?.Selectedmovie
   );
