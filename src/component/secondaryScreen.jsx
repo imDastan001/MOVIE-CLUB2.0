@@ -1,5 +1,9 @@
 import { useSelector } from "react-redux";
 import MovieList from "./movielist";
+
+
+
+
 const secondaryScreen = () => {
   const nowPlaying = useSelector((store) => store.movies?.NowPlayingMovies);
   const popular = useSelector((store) => store.movies?.PopularMovies);
@@ -28,10 +32,12 @@ const secondaryScreen = () => {
 
   return (
     <>
+     
 
       {category.map((x, index) => (
         <MovieList key={index} title={x.title} list={x.data.slice(1, 10)} />
       ))}
+  
 
     </>
   );

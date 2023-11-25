@@ -16,7 +16,7 @@ const primaryScreen = () => {
   return (!Moviedata)?(<HomeShimmer/>):(
 
     <>
-    <div className="bg-gray-950 p-3 relative ">
+    <div className="bg-gray-950 p-3 relative">
       <Poster backgroundPath={Moviedata[0].backdrop_path}/>
       <PosterDesc title={ Moviedata[0].original_title} movieid={Moviedata[0].id} overview={ Moviedata[0].overview}/>
       </div>
