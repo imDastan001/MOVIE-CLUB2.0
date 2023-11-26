@@ -8,7 +8,7 @@ import BackupImg from "../assets/movie.jpg"
 
 import HomeShimmer from "./homeShimmer";
 import { useState } from "react";
-import { IMG_URL, IMG_URL_Background } from "../utils/constant";
+import {IMG_URL_Background } from "../utils/constant";
 const movieinfo = () => {
   const [trailer, setisTrailer] = useState(false);
   const params = useParams()

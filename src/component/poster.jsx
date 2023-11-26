@@ -1,4 +1,4 @@
-import {IMG_URL, IMG_URL_Background} from "../utils/constant"
+import {IMG_URL_Background} from "../utils/constant"
 const poster = ({ backgroundPath}) => {
 
   return (

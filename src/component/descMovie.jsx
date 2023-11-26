@@ -1,5 +1,7 @@
 import { IMG_URL } from "../utils/constant";
-
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from "react";
 const descMovie = ({
   title,
   overview,
@@ -12,10 +14,13 @@ const descMovie = ({
   vote,
   posterPath,
 }) => {
+  useEffect(()=>{
+    AOS.init({duration:2000})
+    },[])
  const rvote = vote.toFixed(1)
   return (
    <> 
-      <div className="pl-5 md:flex gap-8">
+      <div className="pl-5 md:flex gap-8"data-aos="fade-right">
         <img
           className="rounded-xl w-48 mt-9"
           src={IMG_URL+ posterPath}
