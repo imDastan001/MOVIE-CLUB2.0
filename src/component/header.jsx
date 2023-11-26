@@ -20,7 +20,7 @@ const header = () => {
     ) {
       dispatch(removeSearchMovies());
       localStorage.setItem("prevSearch", seesearch);
-      navigate(seesearch.length === 0 ? "/" : `/search/${seesearch}`);
+      navigate("/search/"+seesearch);
     }
   };
 
