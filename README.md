@@ -26,3 +26,23 @@ To run Movie Club 2.0 locally:
 1. Clone this repository.
 2. Install dependencies using `npm install`.
 3. Start the development server with `npm run dev`.
+   
+## Screen Shots
+**Front Page**
+![1](https://github.com/user-attachments/assets/d68fd0c6-e19f-401d-927b-68095ddf4328)
+![2](https://github.com/user-attachments/assets/ae610cf5-7a76-4af2-b588-4aa9c0aad08f)
+
+**Movie Lists**
+![3](https://github.com/user-attachments/assets/cc5bafc4-aac0-488c-a3f4-0588843f9b6e)
+
+**About Movie**
+![4](https://github.com/user-attachments/assets/494e807e-46d7-4ab7-a6c5-ee0cb5daa1fd)
+
+**Trailer section**
+![6](https://github.com/user-attachments/assets/56bd18af-c969-4e7d-8c05-db36aab6a7df)
+
+**You May Like**
+![5](https://github.com/user-attachments/assets/4aa7d73f-1c10-4ecc-8b0b-9be946e6365a)
+
+**Search Button**
+![8](https://github.com/user-attachments/assets/787b704c-dff4-4d4a-bb7a-55fac799362b)
